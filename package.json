@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoJavierFernandez/FriendFinder.git"
+  },
+  "author": "Ricky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoJavierFernandez/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/RicardoJavierFernandez/FriendFinder#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}
