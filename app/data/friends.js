@@ -32,3 +32,5 @@ var friendMatches = [
           ]
       }
 ]
+
+module.exports = friendMatches;
