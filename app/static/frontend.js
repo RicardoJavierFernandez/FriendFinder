@@ -41,14 +41,23 @@ $('#submit').on('click', function(event) {
         ]
     };
 
-    $.post('/api/friends', userData, function(data) {
-        if (data)
-        {
-            console.log(data);
-        }
-        else
-        {
-            console.log("No data submitted");
-        }
-    })
+    if (dataValidation(userData))
+    {
+        $.post('/api/friends', userData, function(data) {
+            if (data)
+            {
+                alert('Best match: ' + data);
+                $("#match-name").text(data);
+                $("#results-modal").modal("toggle");
+            }
+            else
+            {
+                console.log('It appears there was an error, no data was sent back.');
+            }
+        })
+    }
+    else
+    {
+        alert("Please fill out all the fields.");
+    }
 });
