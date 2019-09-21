@@ -46,8 +46,9 @@ $('#submit').on('click', function(event) {
         $.post('/api/friends', userData, function(data) {
             if (data)
             {
-                alert('Best match: ' + data);
+                // alert('Best match: ' + data);
                 $("#match-name").text(data);
+                // alert(data);
                 $("#results-modal").modal("toggle");
             }
             else
